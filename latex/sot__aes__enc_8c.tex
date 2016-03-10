@@ -1,0 +1,63 @@
+\hypertarget{sot__aes__enc_8c}{\section{sot\-\_\-aes\-\_\-enc.\-c File Reference}
+\label{sot__aes__enc_8c}\index{sot\-\_\-aes\-\_\-enc.\-c@{sot\-\_\-aes\-\_\-enc.\-c}}
+}
+
+
+암호화 함수가 들어있는 파일  
+
+
+{\ttfamily \#include \char`\"{}sot\-\_\-aes.\-h\char`\"{}}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{sot__aes__enc_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sot__aes__enc_8c_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}{aes\-\_\-encrypt} (\hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$cipher\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$plain\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$key, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em sot\-\_\-aes encrypt 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+암호화 함수가 들어있는 파일 \begin{DoxyAuthor}{Author}
+James 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016.\-02.\-27
+\end{DoxyDate}
+리눅스에서 표준으로 지원 되는 libgcrypt 라이브러리중 A\-E\-S 128 암호화 라이브러리를 사용하는 샘플 암호화 기능으로 사용자가 원하면 다른 암호화 라이브러리를 사용가능(사용자화, 커스터마이징)하나 서버에서 표준으로 지원 하는 함수입니다. 
+
+\subsection{Typedef Documentation}
+\hypertarget{sot__aes__enc_8c_a4ae1dab0fb4b072a66584546209e7d58}{\index{sot\-\_\-aes\-\_\-enc.\-c@{sot\-\_\-aes\-\_\-enc.\-c}!B\-Y\-T\-E@{B\-Y\-T\-E}}
+\index{B\-Y\-T\-E@{B\-Y\-T\-E}!sot_aes_enc.c@{sot\-\_\-aes\-\_\-enc.\-c}}
+\subsubsection[{B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf B\-Y\-T\-E}}}\label{sot__aes__enc_8c_a4ae1dab0fb4b072a66584546209e7d58}
+B\-Y\-T\-E (unsigned char) 형 선언 
+
+\subsection{Function Documentation}
+\hypertarget{sot__aes__enc_8c_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}{\index{sot\-\_\-aes\-\_\-enc.\-c@{sot\-\_\-aes\-\_\-enc.\-c}!aes\-\_\-encrypt@{aes\-\_\-encrypt}}
+\index{aes\-\_\-encrypt@{aes\-\_\-encrypt}!sot_aes_enc.c@{sot\-\_\-aes\-\_\-enc.\-c}}
+\subsubsection[{aes\-\_\-encrypt}]{\setlength{\rightskip}{0pt plus 5cm}int aes\-\_\-encrypt (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{cipher\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{plain\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{key, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{sot__aes__enc_8c_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}
+
+
+sot\-\_\-aes encrypt 함수 
+
+sot\-\_\-aes 암호화 함수
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\-Text} & 암호화 할 문자열 \\
+\hline
+{\em key} & 암호화용 키 16자리 \\
+\hline
+{\em size} & plain\-Text 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 파일입니다 

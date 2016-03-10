@@ -1,0 +1,60 @@
+\hypertarget{sot__key__gen_8h}{\section{sot\-\_\-key\-\_\-gen.\-h File Reference}
+\label{sot__key__gen_8h}\index{sot\-\_\-key\-\_\-gen.\-h@{sot\-\_\-key\-\_\-gen.\-h}}
+}
+
+
+So\-T crypto key generation header.  
+
+
+{\ttfamily \#include \char`\"{}sot\-\_\-key.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sot__key__gen_8h_a8773b7d06ef2cb6125a020823a41440f}{S\-O\-T\-\_\-\-Key\-Gen} (\hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$Device\-Key, D\-W\-O\-R\-D Device\-Key\-Len, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$Encrypt\-Key, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} Encrypt\-Key\-Len)
+\begin{DoxyCompactList}\small\item\em Device\-Key 정보를 가지고 Encrypt\-Key 를 생성함 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+So\-T crypto key generation header. \begin{DoxyAuthor}{Author}
+James 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016.\-02.\-22
+\end{DoxyDate}
+So\-T crypto 프로젝트 소스 파일 
+
+\subsection{Function Documentation}
+\hypertarget{sot__key__gen_8h_a8773b7d06ef2cb6125a020823a41440f}{\index{sot\-\_\-key\-\_\-gen.\-h@{sot\-\_\-key\-\_\-gen.\-h}!S\-O\-T\-\_\-\-Key\-Gen@{S\-O\-T\-\_\-\-Key\-Gen}}
+\index{S\-O\-T\-\_\-\-Key\-Gen@{S\-O\-T\-\_\-\-Key\-Gen}!sot_key_gen.h@{sot\-\_\-key\-\_\-gen.\-h}}
+\subsubsection[{S\-O\-T\-\_\-\-Key\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-T\-\_\-\-Key\-Gen (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{Device\-Key, }
+\item[{D\-W\-O\-R\-D}]{Device\-Key\-Len, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{Encrypt\-Key, }
+\item[{{\bf B\-Y\-T\-E}}]{Encrypt\-Key\-Len}
+\end{DoxyParamCaption}
+)}}\label{sot__key__gen_8h_a8773b7d06ef2cb6125a020823a41440f}
+
+
+Device\-Key 정보를 가지고 Encrypt\-Key 를 생성함 
+
+Device\-Key 정보를 가지고 Encrypt\-Key 를 생성함
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$\-Device\-Key} & 디바이스 인증키 \\
+\hline
+{\em Device\-Key\-Len} & 디바이스 인증키 길이 \\
+\hline
+{\em $\ast$\-Encrypt\-Key} & 생성된 암호화키를 저장할 참조 포인터 \\
+\hline
+{\em Encrypt\-Key\-Len} & 생성할 암호화키의 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 소스파일
+
+\begin{DoxyRemark}{Remarks}
+디바이스 인증키를 매개변수로 하여 지정된 길이의 (Encrypt\-Key\-Len) 암호화 키를 생성 
+\end{DoxyRemark}
