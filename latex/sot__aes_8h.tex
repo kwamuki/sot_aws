@@ -1,0 +1,133 @@
+\hypertarget{sot__aes_8h}{\section{sot\-\_\-aes.\-h File Reference}
+\label{sot__aes_8h}\index{sot\-\_\-aes.\-h@{sot\-\_\-aes.\-h}}
+}
+
+
+aes encrypt header file  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$gcrypt.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sot__aes_8h_afcf795f5a96fd55561abe69f56224630}{B\-L\-O\-C\-K\-S\-I\-Z\-E}~16
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sot__aes_8h_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}{aes\-\_\-encrypt} (\hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$cipher\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$plain\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$key, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em sot\-\_\-aes 암호화 함수 \end{DoxyCompactList}\item 
+int \hyperlink{sot__aes_8h_af823dbcad2b023d23fce1cea4ec59454}{aes\-\_\-decrypt} (\hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$decrypted\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$cipher\-Text, \hyperlink{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\-Y\-T\-E} $\ast$key, size\-\_\-t size)
+\begin{DoxyCompactList}\small\item\em sot\-\_\-aes 복호화 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+aes encrypt header file \begin{DoxyAuthor}{Author}
+James 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2014.\-05.\-07
+\end{DoxyDate}
+So\-T crypto 프로젝트 소스파일 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{sot__aes_8h_afcf795f5a96fd55561abe69f56224630}{\index{sot\-\_\-aes.\-h@{sot\-\_\-aes.\-h}!B\-L\-O\-C\-K\-S\-I\-Z\-E@{B\-L\-O\-C\-K\-S\-I\-Z\-E}}
+\index{B\-L\-O\-C\-K\-S\-I\-Z\-E@{B\-L\-O\-C\-K\-S\-I\-Z\-E}!sot_aes.h@{sot\-\_\-aes.\-h}}
+\subsubsection[{B\-L\-O\-C\-K\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-L\-O\-C\-K\-S\-I\-Z\-E~16}}\label{sot__aes_8h_afcf795f5a96fd55561abe69f56224630}
+표준 블럭 사이즈 
+
+\subsection{Typedef Documentation}
+\hypertarget{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}{\index{sot\-\_\-aes.\-h@{sot\-\_\-aes.\-h}!B\-Y\-T\-E@{B\-Y\-T\-E}}
+\index{B\-Y\-T\-E@{B\-Y\-T\-E}!sot_aes.h@{sot\-\_\-aes.\-h}}
+\subsubsection[{B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf B\-Y\-T\-E}}}\label{sot__aes_8h_a4ae1dab0fb4b072a66584546209e7d58}
+B\-Y\-T\-E (unsigned char)형 선언 
+
+\subsection{Function Documentation}
+\hypertarget{sot__aes_8h_af823dbcad2b023d23fce1cea4ec59454}{\index{sot\-\_\-aes.\-h@{sot\-\_\-aes.\-h}!aes\-\_\-decrypt@{aes\-\_\-decrypt}}
+\index{aes\-\_\-decrypt@{aes\-\_\-decrypt}!sot_aes.h@{sot\-\_\-aes.\-h}}
+\subsubsection[{aes\-\_\-decrypt}]{\setlength{\rightskip}{0pt plus 5cm}int aes\-\_\-decrypt (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{decrypted\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{cipher\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{key, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{sot__aes_8h_af823dbcad2b023d23fce1cea4ec59454}
+
+
+sot\-\_\-aes 복호화 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$decrypted\-Text} & 복호화 한 문자열 포인터 \\
+\hline
+{\em $\ast$cipher\-Text} & 복호화 할 문자열 \\
+\hline
+{\em $\ast$key} & 암호화용 키 16자리 \\
+\hline
+{\em size} & plain\-Text 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 파일입니다.
+
+sot\-\_\-aes 복호화 함수
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$decrypted\-Text} & 복호화 한 문자열 \\
+\hline
+{\em $\ast$cipher\-Text} & 복호화 할 문자열 \\
+\hline
+{\em $\ast$key} & 암호화용 키 16자리 \\
+\hline
+{\em size} & plain\-Text 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 파일입니다. \hypertarget{sot__aes_8h_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}{\index{sot\-\_\-aes.\-h@{sot\-\_\-aes.\-h}!aes\-\_\-encrypt@{aes\-\_\-encrypt}}
+\index{aes\-\_\-encrypt@{aes\-\_\-encrypt}!sot_aes.h@{sot\-\_\-aes.\-h}}
+\subsubsection[{aes\-\_\-encrypt}]{\setlength{\rightskip}{0pt plus 5cm}int aes\-\_\-encrypt (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{cipher\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{plain\-Text, }
+\item[{{\bf B\-Y\-T\-E} $\ast$}]{key, }
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{sot__aes_8h_ab3533b9515f4e73a4f2cc2b5c5e5fe8c}
+
+
+sot\-\_\-aes 암호화 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$cipher\-Text} & 암호화 된 문자열을 저장할 포인터 \\
+\hline
+{\em $\ast$plain\-Text} & 암호화 할 문자열 \\
+\hline
+{\em $\ast$key} & 암호화용 키 16자리 \\
+\hline
+{\em size} & plain\-Text 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 파일입니다.
+
+sot\-\_\-aes 암호화 함수
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\-Text} & 암호화 할 문자열 \\
+\hline
+{\em key} & 암호화용 키 16자리 \\
+\hline
+{\em size} & plain\-Text 길이\\
+\hline
+\end{DoxyParams}
+So\-T crypto 프로젝트 파일입니다 
