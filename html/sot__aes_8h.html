@@ -113,14 +113,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab3533b9515f4e73a4f2cc2b5c5e5fe8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sot_aes 暗号化関数  <a href="#ab3533b9515f4e73a4f2cc2b5c5e5fe8c">More...</a><br/></td></tr>
 <tr class="separator:ab3533b9515f4e73a4f2cc2b5c5e5fe8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af823dbcad2b023d23fce1cea4ec59454"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sot__aes_8h.html#af823dbcad2b023d23fce1cea4ec59454">aes_decrypt</a> (<a class="el" href="sot__aes_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *decryptedText, <a class="el" href="sot__aes_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *cipherText, <a class="el" href="sot__aes_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *key, size_t size)</td></tr>
-<tr class="memdesc:af823dbcad2b023d23fce1cea4ec59454"><td class="mdescLeft">&#160;</td><td class="mdescRight">sot_aes 暗号化関数  <a href="#af823dbcad2b023d23fce1cea4ec59454">More...</a><br/></td></tr>
+<tr class="memdesc:af823dbcad2b023d23fce1cea4ec59454"><td class="mdescLeft">&#160;</td><td class="mdescRight">sot_aes 復号化関数  <a href="#af823dbcad2b023d23fce1cea4ec59454">More...</a><br/></td></tr>
 <tr class="separator:af823dbcad2b023d23fce1cea4ec59454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>aes encrypt header file </p>
 <dl class="section author"><dt>Author</dt><dd>James </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2014.05.07</dd></dl>
-<p>SoT crypto プロジェクトファイルです. </p>
+<p>SoT crypto プロジェクトソースファイル </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="afcf795f5a96fd55561abe69f56224630"></a>
 <div class="memitem">
@@ -131,7 +131,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>標準ブロックサイズ </p>
+<p>標準ブロックサイズ</p>
 
 </div>
 </div>
@@ -145,7 +145,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BYTE (unsigned char)型宣言 </p>
+<p>BYTE (unsigned char)型宣言</p>
 
 </div>
 </div>
@@ -186,28 +186,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sot_aes 復号化関数 </p>
+<p>sot_aes復号化関数</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*decryptedText</td><td>復号化した文字列ポインタ </td></tr>
-    <tr><td class="paramname">*cipherText</td><td>復号化する文字列 </td></tr>
-    <tr><td class="paramname">*key</td><td>復号化化用キー16桁 </td></tr>
+    <tr><td class="paramname">*decryptedText</td><td>復号化した文字列ポインタ</td></tr>
+    <tr><td class="paramname">*cipherText</td><td>復号化する文字列</td></tr>
+    <tr><td class="paramname">*key</td><td>復号化化用キー16桁</td></tr>
     <tr><td class="paramname">size</td><td>plainText 長さ</td></tr>
   </table>
   </dd>
 </dl>
-<p>SoT crypto プロジェクトファイルです.</p>
+<p>SoT crypto プロジェクトファイルです。</p>
 <p>sot_aes 復号化関数</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*decryptedText</td><td>復号化した文字列 </td></tr>
-    <tr><td class="paramname">*cipherText</td><td>復号化する文字列 </td></tr>
-    <tr><td class="paramname">*key</td><td>復号化化用キー16桁 </td></tr>
+    <tr><td class="paramname">*decryptedText</td><td>復号化した文字列ポインタ</td></tr>
+    <tr><td class="paramname">*cipherText</td><td>復号化する文字列</td></tr>
+    <tr><td class="paramname">*key</td><td>復号化化用キー16桁</td></tr>
     <tr><td class="paramname">size</td><td>plainText 長さ</td></tr>
   </table>
   </dd>
 </dl>
-<p>SoT crypto プロジェクトファイルです. </p>
+<p>SoT crypto プロジェクトファイルです。</p>
 
 </div>
 </div>
@@ -247,27 +247,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sot_aes 暗号化関数 </p>
+<p>sot_aes 暗号化関数</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*cipherText</td><td>暗号化された文字列を貯藏するポインタ </td></tr>
+    <tr><td class="paramname">*cipherText</td><td>暗号化された文字列を貯藏するポインタ</td></tr>
     <tr><td class="paramname">*plainText</td><td>暗号化する文字列</td></tr>
     <tr><td class="paramname">*key</td><td>復号化化用キー16桁</td></tr>
     <tr><td class="paramname">size</td><td>plainText 長さ</td></tr>
   </table>
   </dd>
 </dl>
-<p>SoT crypto プロジェクトファイルです.</p>
+<p>SoT crypto プロジェクトファイルです。</p>
 <p>sot_aes 暗号化関数</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">plainText</td><td>暗号化する文字列 </td></tr>
-    <tr><td class="paramname">key</td><td>復号化化用キー16桁 </td></tr>
+    <tr><td class="paramname">plainText</td><td>暗号化する文字列</td></tr>
+    <tr><td class="paramname">key</td><td>復号化化用キー16桁</td></tr>
     <tr><td class="paramname">size</td><td>plainText 長さ</td></tr>
   </table>
   </dd>
 </dl>
-<p>SoT crypto プロジェクトファイルです. </p>
+<p>SoT crypto プロジェクトファイルです。</p>
 
 </div>
 </div>
